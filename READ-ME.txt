@@ -1,0 +1,9 @@
+  =>  Site Name    : Aroma Ayurvedic Avenue
+
+  =>  Site Link    : https://htmlcodex.com/physical-therapy-website-template
+
+  =>  Site License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Site Author  : TWODLE_MEDIA
+
+  =>  Author Website   : https://itsmathewtj.github.io/TWODLE_MEDIA/
