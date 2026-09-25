@@ -1774,9 +1774,60 @@
     .header-carousel .header-carousel-item { border-bottom-left-radius: 32px; border-bottom-right-radius: 32px; }
 }
 
+/* Keep the navigation above a phone-sized hero and use a shorter image crop. */
+@media (max-width: 767.98px) {
+    .navbar-light {
+        position: absolute;
+        top: 10px;
+        left: 12px;
+        width: calc(100% - 24px);
+        margin: 0;
+        z-index: 1000;
+    }
 
+    .header-carousel .header-carousel-item,
+    .header-carousel .header-carousel-item img {
+        height: min(74vh, 620px);
+        min-height: 480px;
+    }
 
+    .header-carousel .header-carousel-item img {
+        object-position: center center;
+    }
 
+    .header-carousel .header-carousel-item .carousel-caption {
+        padding: 32px 16px;
+    }
 
+    .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
+        width: 100% !important;
+    }
 
+    .header-carousel .header-carousel-item .carousel-caption h1 {
+        font-size: clamp(2.4rem, 10vw, 4rem);
+        margin-bottom: 1rem !important;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption p {
+        font-size: 1rem !important;
+        line-height: 1.6;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption .btn {
+        padding: .85rem 1.5rem !important;
+    }
+
+    .header-carousel .owl-nav .owl-prev,
+    .header-carousel .owl-nav .owl-next {
+        top: auto;
+        bottom: 18px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        font-size: 20px;
+    }
+}
+
+/* Place the mobile navigation over the top of the homepage hero. */
 
