@@ -1,15 +1,19 @@
 ﻿(function ($) {
     "use strict";
 
-    // Spinner
-    var spinner = function () {
-        setTimeout(function () {
-            if ($('#spinner').length > 0) {
-                $('#spinner').removeClass('show');
-            }
-        }, 1);
+    // Keep the initial loading overlay visible until the page has loaded.
+    var spinner = document.getElementById('spinner');
+    var hideSpinner = function () {
+        if (spinner) {
+            spinner.classList.remove('show');
+        }
     };
-    spinner(0);
+
+    if (document.readyState === 'complete') {
+        hideSpinner();
+    } else {
+        window.addEventListener('load', hideSpinner, { once: true });
+    }
     
     
     // Initiate the wowjs
