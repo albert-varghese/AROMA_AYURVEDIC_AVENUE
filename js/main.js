@@ -165,11 +165,10 @@
                 'Additional details: ' + (formData.get('message') || 'None')
             ].join('\n');
 
-            var whatsappUrl = 'https://wa.me/917306011828?text=' + encodeURIComponent(message);
+            var whatsappUrl = 'https://wa.me/918137970401?text=' + encodeURIComponent(message);
             window.location.href = whatsappUrl;
         });
     });
-
 
 })(jQuery);
 
